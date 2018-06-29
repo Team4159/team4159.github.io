@@ -548,27 +548,76 @@ $('#toc').on('click', 'a', function() {
 
 <h3 id="1-encoders-and-potentiometers">1. Encoders and Potentiometers</h3>
 
-<p>Encoders and pots are both examples of rotary sensors - they measure rotation. They are the most commonly used sensors in our FRC robots. We can use encoders to measure the position of a rotating arm, flywheel speed, how much an elevator has been raised, and more.</p>
+<p>«««&lt; HEAD
+Encoders and pots are both examples of rotary sensors - they measure rotation. They are the most commonly used sensors in our FRC robots. We can use encoders to measure the position of a rotating arm, flywheel speed, how much an elevator has been raised, and more.
+=======
+Encoders and potentiometers are both examples of rotary sensors - they measure rotation. They are the most commonly used sensors in our FRC robots. We can use encoders to measure the position of a rotating arm, flywheel speed, how much an elevator has been raised, and more.</p>
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <blockquote>
+        <blockquote>
+          <blockquote>
+            <blockquote>
+              <p>bb29ed788dc5d1fb458348a309d6dda1ca311cb2</p>
+            </blockquote>
+          </blockquote>
+        </blockquote>
+      </blockquote>
+    </blockquote>
+  </blockquote>
+</blockquote>
 
 <p>Read <a href="http://frc-pdr.readthedocs.io/en/latest/motors/encoders.html">this article</a> to learn the difference between absolute and relative (incremental) encoders.</p>
 
-<figure><img class="docimage" src="images/main/quadrature.jpg" alt="" style="max-width: 400px" /><figcaption>Visual graph</figcaption></figure>
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center"><img src="/home/images/main/quadrature.jpg" alt="Quadrature" /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><em>Visual graph</em></td>
+    </tr>
+  </tbody>
+</table>
 
-<p>You might see the term quadrature encoder tossed in around a lot. All that means is that the encoder can tell you the speed and rotation of a shaft bidirectionally (both forwards and backwards). This is possible because they output two channels, A and B, which are out of phase by 90 degrees and the phase difference is what determines the directionallity.</p>
+<p>You might see the term <em>quadrature encoder</em> tossed around a lot. All that means is that the encoder can tell you the speed and rotation of a shaft bidirectionally (both forwards and backwards). This is possible because they send output through two channels, A and B, which are out of phase by 90 degrees. The phase difference is what determines the directionality, and that’s why the function to flip the direction of an encoder reading is called <code class="highlighter-rouge">setSensorPhase</code>. Also, if you use a breakout board with an encoder, you’ll need to be careful about getting the second signal wire in the right pin.</p>
 
-<p>Pulses per revolution (PPR) is a measure of the resolution of an incremental encoder, with one revolution being 360 degrees. Encoders will slowly accumulate error. For example an arm observed at 0 degrees might read 0 pulses and after moving it a bit, at 0 degrees again the encoder will read 340 pulses. To account for error, a limit switch can be used at a point of the arm’s movement to zero out the encoder. Better yet if possible, use an absolute encoder.</p>
+<p>Pulses per revolution (PPR) is a measure of the resolution or precision of an incremental encoder, with one revolution being 360 degrees. Inevitably, encoders will slowly accumulate error. For example, an arm observed at 0 degrees might read 0 pulses, but after moving it away, then back to 0 degrees again, the encoder will read 340 pulses. To account for error, another sensor, such as a limit switch, can be used at some point of the arm’s movement to reset the encoder. Better yet, if possible, use an absolute encoder.</p>
 
-<p>For continuously turning systems, you can pair an encoder with a 360 pot measuring the same output shaft so you can program the encoder to always be “zeroed” at start up. 1678 has done this with their robots and you can research on them to learn more.</p>
+<p>For continuously turning systems, you can pair an encoder with a 360° potentiometer measuring the same output shaft then program the encoder to always be “zeroed” at start up. Team 971 has done this with their robots; a video of their process can be found <a href="https://www.youtube.com/watch?v=Xs4IweRIG5g">here</a>.</p>
 
-<figure><img class="docimage" src="images/main/srxmagencoder.jpg" alt="" style="max-width: 200px" /><figcaption>SRX Mag Encoder</figcaption></figure>
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center"><img src="/home/images/main/srxmagencoder.jpg" alt="srxmagencoder" /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><em>SRX Mag Encoder</em></td>
+    </tr>
+  </tbody>
+</table>
 
-<p>4159 recommends the use of the <a href="http://www.ctr-electronics.com/srx-magnetic-encoder.html">SRX Mag Encoders</a>. They are easily wired to Talon SRX’s and easily programmable using CTRE’s libraries.</p>
+<p>We recommend the use of the <a href="http://www.ctr-electronics.com/srx-magnetic-encoder.html">SRX Mag Encoders</a>. They can be directly wired to Talon SRX’s, and are easily programmable using <a href="http://www.ctr-electronics.com/downloads/api/java/html/index.html">CTRE’s libraries</a>.</p>
 
-<p>Read about pots in this article <a href="http://www.resistorguide.com/potentiometer/">here</a>. Although we don’t use pots very often in our robots, they may prove useful in future competitions.</p>
+<p>Read about potentiometers in this article <a href="http://www.resistorguide.com/potentiometer/">here</a>. Although we don’t use potentiometers very often for our robots, they may prove more practical than encoders in certain circumstances. Here’s a <a href="https://www.chiefdelphi.com/forums/showthread.php?t=100332">Chief Delphi thread</a> on potentiometers vs. encoders, and why you’d want to use one over another.</p>
 
-<figure><img class="docimage" src="images/main/pot.jpg" alt="" style="max-width: 200px" /><figcaption>Pot</figcaption></figure>
-
-<p>There’s a <a href="https://www.chiefdelphi.com/forums/showthread.php?t=100332">Chief Delphi thread</a> discussing about pots vs encoders.</p>
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center"><img src="/home/images/main/pot.jpg" alt="potentiometer" /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><em>Potentiometer. They’re also known as “pots”</em></td>
+    </tr>
+  </tbody>
+</table>
 
 <h3 id="3-imus">3. IMUs</h3>
 
@@ -576,23 +625,56 @@ $('#toc').on('click', 'a', function() {
 
 <p>These sensors can be used to keep the robot’s drivetrain orientation, prevent it from tipping over, and more.</p>
 
-<figure><img class="docimage" src="images/main/navx.jpg" alt="" style="max-width: 400px" /><figcaption>navX</figcaption></figure>
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center"><img src="/home/images/main/navx.jpg" alt="navx" /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><em>navX</em></td>
+    </tr>
+  </tbody>
+</table>
 
-<p>We most commonly use the <a href="https://www.kauailabs.com/store/index.php?route=product/product&amp;product_id=56">navX-MXP by Kauai Labs</a>. It plugs in the the RoboRio’s MXP port or you can use their omnimount, and is easy to program using their provided libraries.</p>
+<p>We most commonly use the <a href="https://www.kauailabs.com/store/index.php?route=product/product&amp;product_id=56">navX-MXP by Kauai Labs</a>. It plugs into the  RoboRio’s MXP port, or alternatively, you can use their omnimount. The libraries provided by Kauai Labs make programming for the navX simple.</p>
 
-<p>Other IMUs teams use include the Pigeon IMU (which is easily integrated with Talon SRX’s), ADIS16448 by Analog Devices, and Spartan Board by 971.</p>
+<p>Other IMUs by FRC teams include the <a href="http://www.ctr-electronics.com/gadgeteer-imu-module-pigeon.html">Pigeon IMU</a> (which is easily integrated with the Talon SRX), <a href="http://www.analog.com/en/products/sensors-mems/inertial-measurement-units/adis16448.html#product-overview">ADIS16448</a> by Analog Devices, and <a href="https://numato.com/product/mimas-spartan-6-fpga-development-board">Spartan Board</a> by 971.</p>
 
 <h3 id="4-limit-switches">4. Limit Switches</h3>
 
-<figure><img class="docimage" src="images/main/limitswitch.jpg" alt="" style="max-width: 250px" /><figcaption>Limit switch</figcaption></figure>
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center"><img src="/home/images/main/limitswitch.jpg" alt="limitswitch" /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><em>Limit switch</em></td>
+    </tr>
+  </tbody>
+</table>
 
-<p>Read <a href="http://frc-pdr.readthedocs.io/en/latest/motors/limitswitch.html">this article</a> to learn what limit switches are, how to wire them, and how to program them. WPILib also has an <a href="http://wpilib.screenstepslive.com/s/currentCS/m/java/l/599744-using-limit-switches-to-control-behavior">article</a> on programming limit switches. When using a limit switch, keep in mind if it’s normally open or normally closed.</p>
+<p>Read <a href="http://frc-pdr.readthedocs.io/en/latest/motors/limitswitch.html">this article</a> to learn what limit switches are, how to wire them, and how to program them. WPILib also has an <a href="http://wpilib.screenstepslive.com/s/currentCS/m/java/l/599744-using-limit-switches-to-control-behavior">article</a> on programming limit switches. When using a limit switch, be sure to note whether it’s normally open (NO) or normally closed (NC).</p>
 
 <p>Hall effect sensors can be used as a contactless limit switch. We recommend <a href="https://www.andymark.com/Electrical-p/am-3313.htm">this sensor</a> intended for use on the DART actuator. If you’d like, you can learn about how hall effect sensors work <a href="https://www.electronics-tutorials.ws/electromagnetism/hall-effect.html">here</a>.</p>
 
-<figure><img class="docimage" src="images/main/halleffect.gif" alt="" style="max-width: 400px" /><figcaption>Hall effect</figcaption></figure>
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center"><img src="/home/images/main/halleffect.gif" alt="halleffect" /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><em>Hall effect</em></td>
+    </tr>
+  </tbody>
+</table>
 
-<h3 id="5-other-not-so-common-ones-but-maybe-useful">5. Other Not So Common Ones But Maybe Useful</h3>
+<h3 id="5-other-not-so-common-but-maybe-useful-sensors">5. Other Not so Common (But Maybe Useful) Sensors</h3>
 
 <ul>
   <li>Ultrasonic</li>
@@ -605,13 +687,18 @@ $('#toc').on('click', 'a', function() {
 
 <h2 id="programming-sensors">Programming Sensors</h2>
 
-<p>Take a look at WPILib’s official <a href="https://wpilib.screenstepslive.com/s/currentCS/m/java/c/88895">sensor section</a>. They provide information and code examples on how to implement several sensors in your FRC robot.</p>
+<p>Take a look at WPILib’s official <a href="https://wpilib.screenstepslive.com/s/currentCS/m/java/c/88895">sensor section</a>. They provide information and code examples on how to implement different sensors into your FRC robot.</p>
 
-<p>Reference the Talon SRX user guide and Phoenix Framework documentation to program CTRE sensors (SRX Mag Encoder, Talon Tach, etc.)</p>
+<p>Other documentation:</p>
+<ul>
+  <li><a href="http://www.ctr-electronics.com/downloads/api/java/html/index.html">Talon SRX User Guide</a></li>
+  <li><a href="http://www.ctr-electronics.com/downloads/pdf/Talon%20SRX%20Software%20Reference%20Manual-1.pdf">Phoenix Framework Documentation</a></li>
+  <li><a href="http://first.wpi.edu/FRC/roborio/release/docs/java/">WPILib API Documentation</a></li>
+</ul>
 
 <h2 id="further-learning">Further Learning</h2>
 
-<p>1678 has done multiple workshops on “RoboRio and Sensors”. You should watch one of these videos to supplement our notes above.</p>
+<p>FRC Team 1678 has done multiple workshops on “RoboRio and Sensors.” Watch one of these videos to supplement our notes above.</p>
 <ul>
   <li><a href="https://www.youtube.com/watch?v=tKSH2k5lTLs">Fall 2017</a></li>
   <li><a href="https://www.youtube.com/watch?v=vhjChjfEvhM">Fall 2016</a></li>
