@@ -536,7 +536,9 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <h2 id="overview">Overview</h2>
+  <!-- Still have General tips, Multimeter and PWM to do -->
+
+<h2 id="overview">Overview</h2>
 <p>Electricity, according to <a href="http://www.dictionary.com/browse/electricity">dictionary.com</a>, is the study of electric charges. It powers all electronics. It is a vast field, but for FRC purposes, you really just need to grasps these 3 concepts: <em>Voltage, Current, Power</em></p>
 
 <h2 id="current">Current</h2>
@@ -544,7 +546,7 @@ $('#toc').on('click', 'a', function() {
 
 <p>Formally electric current is defined as the amount of charge traveling through a given cross section in a given amount of time. To make it less wordy, it means the flow of charge. <strong>Remember current is the flow of charge, not electrons</strong>.</p>
 
-<figure><img class="docimage" src="images/current.gif" alt="electric current" /><figcaption>Here is a conceptual representation of electric current</figcaption></figure>
+<figure><img class="docimage" src="images//electroBasicTheoryImg/current.gif" alt="electric current" /><figcaption>Here is a conceptual representation of electric current</figcaption></figure>
 
 <h3 id="what-is-charge">What is charge?</h3>
 <p>Charge is the fundamental quantity of electricity. There are positive charges and negative charges. In an atom, the electrons have negative charge, and the protons have positive charge. By convention, people usually look at the movement of positive charge going through a wire as current. <em>However, that does not mean current is the movement of protons through the wire</em>.</p>
@@ -565,7 +567,7 @@ $('#toc').on('click', 'a', function() {
 
 <p>Now, what is voltage? <strong>Voltage is the electric potential difference of two points</strong> in space, but for our purposes, it is two points on our circuit. <em>Therefore, voltage is relative</em> By convention, when people refer to the voltage of a single point, it means the electric potential difference between that point and a point infinitely far away, which again by convention, have the electric potential of 0. In our case, when people refers to a single point on a circuit, they are comparing the electric potential at that point with “ground” or the negative terminal of your battery, which by convention have the electric potential, or voltage of 0.</p>
 
-<figure><img class="docimage" src="images/voltage.png" alt="electric voltage" /><figcaption>Here is a conceptual representation of the relationship between current and voltage</figcaption></figure>
+<figure><img class="docimage" src="images//electroBasicTheoryImg/voltage.png" alt="electric voltage" /><figcaption>Here is a conceptual representation of the relationship between current and voltage</figcaption></figure>
 
 <h3 id="important-notes-1">Important Notes</h3>
 <ul>
@@ -591,6 +593,40 @@ where <strong>P</strong> is <em>Power</em>, <strong>I</strong> is <em>Current</e
 <p>An electronic component gets burnt when there are too much excess energy applied to it. In other words, to much charges are going through it, giving the component their energy to the point where the component can’t use all the energy being provided. Then the excess energy becomes heat, barbequing the electronic component. So basically, the charges are overworking the component, and are too powerful for the component to handle.</p>
 
 <p>To preventing that from happening, we can look at P=IV. Limiting both I or V could work, but in our case on our robot, the current usually is easier to limit. We can put a fuse to protect the component or figure out the reason why so much current is going through to the component.</p>
+
+<h3 id="important-notes-2">Important Notes</h3>
+<ul>
+  <li>Power is given in units called <em>Watts</em> or <em>W</em> for short, <em>P</em> is the symbol for power</li>
+</ul>
+
+<h2 id="recap-of-basic-concepts">Recap of Basic Concepts</h2>
+<p>Here is a recap video on the fundamental things about basic electrical concepts: <a href="https://www.youtube.com/watch?v=mvuHsu8S6v8">Recap Video</a></p>
+
+<p>Don’t worry so much about resistance, it is not that crucial in our case because we don’t really get to alter the resistance of anything, but it is a good thing to know.</p>
+
+<p>In short, resistance means how much a electrical component resists the flow of current. Its relationship with voltage and current can be described as the following equation:</p>
+
+<p><strong>V=IR</strong> <em>(Ohm’s Law)</em>
+where <em>R</em> is resistance.</p>
+
+<p>Resistance as described above is represented by <em>R</em> and have the units of “Ohm” or the capitalized Greek letter “Omega” for short.</p>
+
+<h2 id="other-topics">Other Topics</h2>
+<h3 id="pulse-width-modulation-pwm">Pulse Width Modulation (PWM)</h3>
+<p>Here is a cool video that explains PWM pretty well: <a href="https://www.youtube.com/watch?v=ISzRh5eN_Pg">PWM Video</a> <em>(Sorry about the ads in this video)</em></p>
+
+<p>PWM is used by digital devices to “fake” analog signals, because digital devices only have an On or Off state. In order to output a signal that is not as strong as a full on, and not as weak as an off, PWM is used to modulate the signal.</p>
+
+<p>The key for PWM to work is the idea of a duty cycle. In order to achieve the same effect as an analog device, the signal is pulsating at different intervals. Duty cycle in this case means for each cycle of the pulse, how long is the device on? It is usually presented as a percentage of the total time of the entire cycle, or a period. The higher the duty cycle means the stronger the signal because the device is on for longer; the lower the duty cycle is means the weaker the signal because the device is off longer.</p>
+
+<p>Here is a video that explains more in depth of how to calculate the duty cycle: <a href="https://www.youtube.com/watch?v=4PtepH8CcEE&amp;t=402s">Duty Cycle Video</a></p>
+
+<p>In our case, PWM is used more for a communication purposes between components in simpler and older robots we built.</p>
+
+<h3 id="controller-area-networkcan-bus">Controller Area Network(CAN Bus)</h3>
+<p>This is another method of communication between components. Rather than just altering signal send between different components, CAN is a protocol of communication between multiple components, allowing more complex information being transmitted. This method is becoming more and more popular, because more info can be acquired about components using this protocol.</p>
+
+<p>On our recent robots we use CAN, for more details on how to wire it check out <a href="/home/main_wiring.html">Wiring</a></p>
 
 <h2 id="image-sources">Image sources</h2>
 <ul>

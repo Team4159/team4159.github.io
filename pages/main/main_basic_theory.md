@@ -18,7 +18,7 @@ It is common sense that we know electricity flows. The word "current" is used to
 Formally electric current is defined as the amount of charge traveling through a given cross section in a given amount of time. To make it less wordy, it means the flow of charge. **Remember current is the flow of charge, not electrons**.
 
 {% include image.html
-file="current.gif" alt="electric current" caption = "Here is a conceptual representation of electric current"%}
+file="/electroBasicTheoryImg/current.gif" alt="electric current" caption = "Here is a conceptual representation of electric current"%}
 
 ### What is charge?
 Charge is the fundamental quantity of electricity. There are positive charges and negative charges. In an atom, the electrons have negative charge, and the protons have positive charge. By convention, people usually look at the movement of positive charge going through a wire as current. *However, that does not mean current is the movement of protons through the wire*.
@@ -41,7 +41,7 @@ It is common sense that water flows from places that are high to places that are
 Now, what is voltage? **Voltage is the electric potential difference of two points** in space, but for our purposes, it is two points on our circuit. *Therefore, voltage is relative* By convention, when people refer to the voltage of a single point, it means the electric potential difference between that point and a point infinitely far away, which again by convention, have the electric potential of 0. In our case, when people refers to a single point on a circuit, they are comparing the electric potential at that point with "ground" or the negative terminal of your battery, which by convention have the electric potential, or voltage of 0.
 
 {% include image.html
-file="voltage.png" alt="electric voltage" caption = "Here is a conceptual representation of the relationship between current and voltage"%}
+file="/electroBasicTheoryImg/voltage.png" alt="electric voltage" caption = "Here is a conceptual representation of the relationship between current and voltage"%}
 
 ### Important Notes
 - Voltage is the potential difference between 2 points.
@@ -67,6 +67,40 @@ where **P** is *Power*, **I** is *Current*, **V** is *Voltage*
 An electronic component gets burnt when there are too much excess energy applied to it. In other words, to much charges are going through it, giving the component their energy to the point where the component can't use all the energy being provided. Then the excess energy becomes heat, barbequing the electronic component. So basically, the charges are overworking the component, and are too powerful for the component to handle.
 
 To preventing that from happening, we can look at P=IV. Limiting both I or V could work, but in our case on our robot, the current usually is easier to limit. We can put a fuse to protect the component or figure out the reason why so much current is going through to the component.
+
+### Important Notes
+- Power is given in units called *Watts* or *W* for short, *P* is the symbol for power
+
+
+## Recap of Basic Concepts
+Here is a recap video on the fundamental things about basic electrical concepts: [Recap Video](https://www.youtube.com/watch?v=mvuHsu8S6v8)
+
+Don't worry so much about resistance, it is not that crucial in our case because we don't really get to alter the resistance of anything, but it is a good thing to know.
+
+In short, resistance means how much a electrical component resists the flow of current. Its relationship with voltage and current can be described as the following equation:
+
+**V=IR** *(Ohm's Law)*
+where *R* is resistance.
+
+Resistance as described above is represented by *R* and have the units of "Ohm" or the capitalized Greek letter "Omega" for short.
+
+## Other Topics
+### Pulse Width Modulation (PWM)
+Here is a cool video that explains PWM pretty well: [PWM Video](https://www.youtube.com/watch?v=ISzRh5eN_Pg) *(Sorry about the ads in this video)*
+
+PWM is used by digital devices to "fake" analog signals, because digital devices only have an On or Off state. In order to output a signal that is not as strong as a full on, and not as weak as an off, PWM is used to modulate the signal.
+
+The key for PWM to work is the idea of a duty cycle. In order to achieve the same effect as an analog device, the signal is pulsating at different intervals. Duty cycle in this case means for each cycle of the pulse, how long is the device on? It is usually presented as a percentage of the total time of the entire cycle, or a period. The higher the duty cycle means the stronger the signal because the device is on for longer; the lower the duty cycle is means the weaker the signal because the device is off longer.
+
+Here is a video that explains more in depth of how to calculate the duty cycle: [Duty Cycle Video](https://www.youtube.com/watch?v=4PtepH8CcEE&t=402s)
+
+In our case, PWM is used more for a communication purposes between components in simpler and older robots we built.
+
+### Controller Area Network(CAN Bus)
+This is another method of communication between components. Rather than just altering signal send between different components, CAN is a protocol of communication between multiple components, allowing more complex information being transmitted. This method is becoming more and more popular, because more info can be acquired about components using this protocol.
+
+On our recent robots we use CAN, for more details on how to wire it check out [Wiring](main_wiring.md)
+
 
 ## Image sources
 - Current, voltage: https://www.physics.uci.edu/~outreach/demos/electricity/foamp.php
