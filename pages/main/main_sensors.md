@@ -51,7 +51,7 @@ Learn about the differences between accelerometers, gyroscopes, and IMU's in thi
 
 These sensors can be used to keep the robot's drivetrain orientation, prevent it from tipping over, and more.
 
-|![navx](../../images/main/navx.jpg)|
+|![navx](/images/main/navx.jpg)|
 |:---:|
 |*navX*|
 
@@ -61,7 +61,7 @@ Other IMUs by FRC teams include the [Pigeon IMU](http://www.ctr-electronics.com/
 
 ### 4. Limit Switches
 
-|![limitswitch](../../images/main/limitswitch.jpg)|
+|![limitswitch](/images/main/limitswitch.jpg)|
 |:---:|
 |*Limit switch*|
 
@@ -69,7 +69,7 @@ Read [this article](http://frc-pdr.readthedocs.io/en/latest/motors/limitswitch.h
 
 Hall effect sensors can be used as a contactless limit switch. We recommend [this sensor](https://www.andymark.com/Electrical-p/am-3313.htm) intended for use on the DART actuator. If you'd like, you can learn about how hall effect sensors work [here](https://www.electronics-tutorials.ws/electromagnetism/hall-effect.html).
 
-|![halleffect](../../images/main/halleffect.gif)|
+|![halleffect](/images/main/halleffect.gif)|
 |:---:|
 |*Hall effect*|
 
