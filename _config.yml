@@ -101,10 +101,9 @@ defaults:
 # these are defaults used for the frontmatter for these file types
 
 sidebars:
-- home_sidebar
 - main_sidebar
-- product1_sidebar
-- product2_sidebar
+- projects_sidebar
+- sitemap_sidebar
 - other
 
 description: "FRC Team 4159 CardinalBotics' project documentation, references, and blog on FRC software, controls, and electronics"

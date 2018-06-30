@@ -19,11 +19,7 @@ Let's take a look at the sensors we use in our FRC robots.
 
 ### 1. Encoders and Potentiometers
 
-<<<<<<< HEAD
-Encoders and pots are both examples of rotary sensors - they measure rotation. They are the most commonly used sensors in our FRC robots. We can use encoders to measure the position of a rotating arm, flywheel speed, how much an elevator has been raised, and more.
-=======
 Encoders and potentiometers are both examples of rotary sensors - they measure rotation. They are the most commonly used sensors in our FRC robots. We can use encoders to measure the position of a rotating arm, flywheel speed, how much an elevator has been raised, and more.
->>>>>>> bb29ed788dc5d1fb458348a309d6dda1ca311cb2
 
 Read [this article](http://frc-pdr.readthedocs.io/en/latest/motors/encoders.html) to learn the difference between absolute and relative (incremental) encoders.
 
@@ -58,7 +54,7 @@ Learn about the differences between accelerometers, gyroscopes, and IMU's in thi
 
 These sensors can be used to keep the robot's drivetrain orientation, prevent it from tipping over, and more.
 
-|![navx](../../images/main/navx.jpg)|
+|![navx](/images/main/navx.jpg)|
 |:---:|
 |*navX*|
 
@@ -68,7 +64,7 @@ Other IMUs by FRC teams include the [Pigeon IMU](http://www.ctr-electronics.com/
 
 ### 4. Limit Switches
 
-|![limitswitch](../../images/main/limitswitch.jpg)|
+|![limitswitch](/images/main/limitswitch.jpg)|
 |:---:|
 |*Limit switch*|
 
@@ -76,7 +72,7 @@ Read [this article](http://frc-pdr.readthedocs.io/en/latest/motors/limitswitch.h
 
 Hall effect sensors can be used as a contactless limit switch. We recommend [this sensor](https://www.andymark.com/Electrical-p/am-3313.htm) intended for use on the DART actuator. If you'd like, you can learn about how hall effect sensors work [here](https://www.electronics-tutorials.ws/electromagnetism/hall-effect.html).
 
-|![halleffect](../../images/main/halleffect.gif)|
+|![halleffect](/images/main/halleffect.gif)|
 |:---:|
 |*Hall effect*|
 
