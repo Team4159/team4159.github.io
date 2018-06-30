@@ -45,9 +45,6 @@ Read about potentiometers in this article [here](http://www.resistorguide.com/po
 |:---:|
 |*Potentiometer. They're also known as "pots"*|
 
-
-
-
 ### 3. IMUs
 
 Learn about the differences between accelerometers, gyroscopes, and IMU's in this [Sparkfun guide](https://www.sparkfun.com/pages/accel_gyro_guide).
