@@ -98,7 +98,7 @@
 "tags": "",
 "keywords": "electronics, frc",
 "url": "main_frc_electronics.html",
-"summary": ""
+"summary": "There are several core electrical components that have to be present in every FRC robot to be FRC legal."
 }
 ,
 
@@ -215,11 +215,11 @@
 
 
 {
-"title": "Sensors and Other Custom Electronics",
+"title": "Sensors",
 "tags": "",
-"keywords": "programming, java",
+"keywords": "electronics, sensors",
 "url": "main_sensors.html",
-"summary": "test"
+"summary": "Sensors are what allow your robot to interact with the physical world."
 }
 ,
 

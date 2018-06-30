@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="test">
-<meta name="keywords" content=" programming, java">
-<title>Sensors and Other Custom Electronics | CardinalBotics Programming Portal</title>
+<meta name="description" content="Sensors are what allow your robot to interact with the physical world.">
+<meta name="keywords" content=" electronics, sensors">
+<title>Sensors | CardinalBotics Programming Portal</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -148,7 +148,7 @@
 
 
 
-  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:pr@team4159.org?subject=CardinalBotics Programming Portal feedback&body=I have some feedback about the Sensors and Other Custom Electronics page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Email</a>
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:pr@team4159.org?subject=CardinalBotics Programming Portal feedback&body=I have some feedback about the Sensors page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Email</a>
 
 </li>
 
@@ -166,7 +166,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Sensors and Other Custom Electronics">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="Sensors">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -502,7 +502,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Sensors and Other Custom Electronics</h1>
+   <h1 class="post-title-main">Sensors</h1>
 </div>
 
 
@@ -510,7 +510,7 @@
 <div class="post-content">
 
    
-    <div class="summary">test</div>
+    <div class="summary">Sensors are what allow your robot to interact with the physical world.</div>
    
 
     
@@ -538,7 +538,151 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <p>1678 has done multiple workshops on “RoboRio and Sensors”. They cover the same slides content.</p>
+  <h2 id="preface">Preface</h2>
+
+<p>Without sensors and feedback that utilizes them, your robot is basically an overengineered RC car.</p>
+
+<p><em>Seriously, in a demo event I remember one parent asked, “What makes this a robot and not just a RC car?” It was difficult to answer that question.</em></p>
+
+<p>Let’s take a look at the sensors we use in our FRC robots.</p>
+
+<h2 id="sensors">Sensors</h2>
+
+<h3 id="1-encoders-and-potentiometers">1. Encoders and Potentiometers</h3>
+
+<p>Encoders and potentiometers are both examples of rotary sensors - they measure rotation. They are the most commonly used sensors in our FRC robots. We can use encoders to measure the position of a rotating arm, flywheel speed, how much an elevator has been raised, and more.</p>
+
+<p>Read <a href="http://frc-pdr.readthedocs.io/en/latest/motors/encoders.html">this article</a> to learn the difference between absolute and relative (incremental) encoders.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center"><img src="/images/main/quadrature.jpg" alt="Quadrature" /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><em>Visual graph</em></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>You might see the term <em>quadrature encoder</em> tossed around a lot. All that means is that the encoder can tell you the speed and rotation of a shaft bidirectionally (both forwards and backwards). This is possible because they send output through two channels, A and B, which are out of phase by 90 degrees. The phase difference is what determines the directionality, and that’s why the function to flip the direction of an encoder reading is called <code class="highlighter-rouge">setSensorPhase</code>. Also, if you use a breakout board with an encoder, you’ll need to be careful about getting the second signal wire in the right pin.</p>
+
+<p>Pulses per revolution (PPR) is a measure of the resolution or precision of an incremental encoder, with one revolution being 360 degrees. Inevitably, encoders will slowly accumulate error. For example, an arm observed at 0 degrees might read 0 pulses, but after moving it away, then back to 0 degrees again, the encoder will read 340 pulses. To account for error, another sensor, such as a limit switch, can be used at some point of the arm’s movement to reset the encoder. Better yet, if possible, use an absolute encoder.</p>
+
+<p>For continuously turning systems, you can pair an encoder with a 360° potentiometer measuring the same output shaft then program the encoder to always be “zeroed” at start up. Team 971 has done this with their robots; a video of their process can be found <a href="https://www.youtube.com/watch?v=Xs4IweRIG5g">here</a>.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center"><img src="/images/main/srxmagencoder.jpg" alt="srxmagencoder" /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><em>SRX Mag Encoder</em></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>We recommend the use of the <a href="http://www.ctr-electronics.com/srx-magnetic-encoder.html">SRX Mag Encoders</a>. They can be directly wired to Talon SRX’s, and are easily programmable using <a href="http://www.ctr-electronics.com/downloads/api/java/html/index.html">CTRE’s libraries</a>.</p>
+
+<p>Read about potentiometers in this article <a href="http://www.resistorguide.com/potentiometer/">here</a>. Although we don’t use potentiometers very often for our robots, they may prove more practical than encoders in certain circumstances. Here’s a <a href="https://www.chiefdelphi.com/forums/showthread.php?t=100332">Chief Delphi thread</a> on potentiometers vs. encoders, and why you’d want to use one over another.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center"><img src="/images/main/pot.jpg" alt="potentiometer" /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><em>Potentiometer. They’re also known as “pots”</em></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="3-imus">3. IMUs</h3>
+
+<p>Learn about the differences between accelerometers, gyroscopes, and IMU’s in this <a href="https://www.sparkfun.com/pages/accel_gyro_guide">Sparkfun guide</a>.</p>
+
+<p>These sensors can be used to keep the robot’s drivetrain orientation, prevent it from tipping over, and more.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center"><img src="/images/main/navx.jpg" alt="navx" /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><em>navX</em></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>We most commonly use the <a href="https://www.kauailabs.com/store/index.php?route=product/product&amp;product_id=56">navX-MXP by Kauai Labs</a>. It plugs into the  RoboRio’s MXP port, or alternatively, you can use their omnimount. The libraries provided by Kauai Labs make programming for the navX simple.</p>
+
+<p>Other IMUs by FRC teams include the <a href="http://www.ctr-electronics.com/gadgeteer-imu-module-pigeon.html">Pigeon IMU</a> (which is easily integrated with the Talon SRX), <a href="http://www.analog.com/en/products/sensors-mems/inertial-measurement-units/adis16448.html#product-overview">ADIS16448</a> by Analog Devices, and <a href="https://numato.com/product/mimas-spartan-6-fpga-development-board">Spartan Board</a> by 971.</p>
+
+<h3 id="4-limit-switches">4. Limit Switches</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center"><img src="/images/main/limitswitch.jpg" alt="limitswitch" /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><em>Limit switch</em></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Read <a href="http://frc-pdr.readthedocs.io/en/latest/motors/limitswitch.html">this article</a> to learn what limit switches are, how to wire them, and how to program them. WPILib also has an <a href="http://wpilib.screenstepslive.com/s/currentCS/m/java/l/599744-using-limit-switches-to-control-behavior">article</a> on programming limit switches. When using a limit switch, be sure to note whether it’s normally open (NO) or normally closed (NC).</p>
+
+<p>Hall effect sensors can be used as a contactless limit switch. We recommend <a href="https://www.andymark.com/Electrical-p/am-3313.htm">this sensor</a> intended for use on the DART actuator. If you’d like, you can learn about how hall effect sensors work <a href="https://www.electronics-tutorials.ws/electromagnetism/hall-effect.html">here</a>.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center"><img src="/images/main/halleffect.gif" alt="halleffect" /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><em>Hall effect</em></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="5-other-not-so-common-but-maybe-useful-sensors">5. Other Not so Common (But Maybe Useful) Sensors</h3>
+
+<ul>
+  <li>Ultrasonic</li>
+  <li><a href="http://www.clippard.com/cms/wiki/magnetic-reed-switches-position-location">Reed switches</a> (usually on pneumatic cylinders)</li>
+  <li><a href="https://learn.adafruit.com/ir-sensor/overview">IR sensors</a></li>
+  <li><a href="https://learn.adafruit.com/ir-breakbeam-sensors?view=all">Break beam sensor</a></li>
+  <li><a href="https://www.sparkfun.com/news/2435">LIDAR</a> (probably overkill)</li>
+  <li>Cameras in the <a href="/main-vision.html">Vision section</a></li>
+</ul>
+
+<h2 id="programming-sensors">Programming Sensors</h2>
+
+<p>Take a look at WPILib’s official <a href="https://wpilib.screenstepslive.com/s/currentCS/m/java/c/88895">sensor section</a>. They provide information and code examples on how to implement different sensors into your FRC robot.</p>
+
+<p>Other documentation:</p>
+<ul>
+  <li><a href="http://www.ctr-electronics.com/downloads/api/java/html/index.html">Talon SRX User Guide</a></li>
+  <li><a href="http://www.ctr-electronics.com/downloads/pdf/Talon%20SRX%20Software%20Reference%20Manual-1.pdf">Phoenix Framework Documentation</a></li>
+  <li><a href="http://first.wpi.edu/FRC/roborio/release/docs/java/">WPILib API Documentation</a></li>
+</ul>
+
+<h2 id="further-learning">Further Learning</h2>
+
+<p>FRC Team 1678 has done multiple workshops on “RoboRio and Sensors.” Watch one of these videos to supplement our notes above.</p>
 <ul>
   <li><a href="https://www.youtube.com/watch?v=tKSH2k5lTLs">Fall 2017</a></li>
   <li><a href="https://www.youtube.com/watch?v=vhjChjfEvhM">Fall 2016</a></li>
