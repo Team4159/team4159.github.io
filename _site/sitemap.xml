@@ -34,6 +34,12 @@
   
   
   <url>
+    <loc>http://localhost:4000/main_actuators.html</loc>
+  </url>
+  
+  
+  
+  <url>
     <loc>http://localhost:4000/main_basic_theory.html</loc>
   </url>
   
@@ -82,6 +88,12 @@
   
   
   <url>
+    <loc>http://localhost:4000/main_hybrid_apps.html</loc>
+  </url>
+  
+  
+  
+  <url>
     <loc>http://localhost:4000/main_java.html</loc>
   </url>
   
@@ -124,6 +136,12 @@
   
   
   <url>
+    <loc>http://localhost:4000/main_reactjs.html</loc>
+  </url>
+  
+  
+  
+  <url>
     <loc>http://localhost:4000/main_robot_programming_intro.html</loc>
   </url>
   
@@ -136,7 +154,19 @@
   
   
   <url>
+    <loc>http://localhost:4000/main_squarespace.html</loc>
+  </url>
+  
+  
+  
+  <url>
     <loc>http://localhost:4000/main_vision.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/main_web_intro.html</loc>
   </url>
   
   

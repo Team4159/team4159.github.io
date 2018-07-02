@@ -39,6 +39,17 @@
 
 
 {
+"title": "Actuators",
+"tags": "",
+"keywords": "actuators",
+"url": "main_actuators.html",
+"summary": "The things that move!"
+}
+,
+
+
+
+{
 "title": "Basic Electrical Theory",
 "tags": "",
 "keywords": "electrical, electronics, basics",
@@ -127,6 +138,17 @@
 
 
 {
+"title": "Hybrid Mobile Apps",
+"tags": "",
+"keywords": "mobile, apps",
+"url": "main_hybrid_apps.html",
+"summary": "Easier than native.."
+}
+,
+
+
+
+{
 "title": "Learning Java",
 "tags": "",
 "keywords": "programming, java",
@@ -204,6 +226,17 @@
 
 
 {
+"title": "React.js and Javascript Libraries",
+"tags": "",
+"keywords": "programming, web, reactjs, javascript",
+"url": "main_reactjs.html",
+"summary": "Too many JS frameworks... which one should I use???"
+}
+,
+
+
+
+{
 "title": "Robot Programming",
 "tags": "",
 "keywords": "programming, java",
@@ -226,11 +259,33 @@
 
 
 {
+"title": "Squarespace",
+"tags": "",
+"keywords": "squarespace, web",
+"url": "main_squarespace.html",
+"summary": "What we use for our official team website"
+}
+,
+
+
+
+{
 "title": "Computer Vision",
 "tags": "",
 "keywords": "computer vision",
 "url": "main_vision.html",
 "summary": "test"
+}
+,
+
+
+
+{
+"title": "Introduction to Web Development",
+"tags": "",
+"keywords": "programming, web",
+"url": "main_web_intro.html",
+"summary": "This is a summary"
 }
 ,
 
