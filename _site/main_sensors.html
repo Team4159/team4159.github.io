@@ -548,13 +548,66 @@ $('#toc').on('click', 'a', function() {
 
 <h3 id="1-encoders-and-potentiometers">1. Encoders and Potentiometers</h3>
 
-<h3 id="3-gyroscopes-and-imus">3. Gyroscopes and IMUs</h3>
+<p>Encoders and pots are both examples of rotary sensors - they measure rotation. They are they most commonly used sensors in our FRC robots. We can use encoders to measure the position of a rotating arm, flywheel speed, how much an elevator has been raised, and more.</p>
+
+<p>Read <a href="http://frc-pdr.readthedocs.io/en/latest/motors/encoders.html">this article</a> to learn the difference between absolute and relative (incremental) encoders.</p>
+
+<figure><img class="docimage" src="images/main/quadrature.jpg" alt="" style="max-width: 400px" /><figcaption>Visual graph</figcaption></figure>
+
+<p>You might see the term quadrature encoder tossed in around a lot. All that means is that the encoder can tell you the speed and rotation of a shaft bidirectionally (both forwards and backwards). This is possible because they output two channels, A and B, which are out of phase by 90 degrees and the phase difference is what determines the directionallity.</p>
+
+<p>Pulses per revolution (PPR) is a measure of the resolution of an incremental encoder, with one revolution being 360 degrees. Encoders will slowly accumulate error. For example an arm observed at 0 degrees might read 0 pulses and after moving it a bit, at 0 degrees again the encoder will read 340 pulses. To account for error, a limit switch can be used at a point of the arm’s movement to zero out the encoder. Better yet if possible, use an absolute encoder.</p>
+
+<p>For continuously turning systems, you can pair an encoder with a 360 pot measuring the same output shaft so you can program the encoder to always be “zeroed” at start up. 1678 has done this with their robots and you can research on them to learn more.</p>
+
+<figure><img class="docimage" src="images/main/srxmagencoder.jpg" alt="" style="max-width: 200px" /><figcaption>SRX Mag Encoder</figcaption></figure>
+
+<p>4159 recommends the use of the <a href="http://www.ctr-electronics.com/srx-magnetic-encoder.html">SRX Mag Encoders</a>. They are easily wired to Talon SRX’s and easily programmable using CTRE’s libraries.</p>
+
+<p>Read about pots in this article <a href="http://www.resistorguide.com/potentiometer/">here</a>. Although we don’t use pots very often in our robots, they may prove useful in future competitions.</p>
+
+<figure><img class="docimage" src="images/main/pot.jpg" alt="" style="max-width: 200px" /><figcaption>Pot</figcaption></figure>
+
+<p>There’s a <a href="https://www.chiefdelphi.com/forums/showthread.php?t=100332">Chief Delphi thread</a> discussing about pots vs encoders.</p>
+
+<h3 id="3-imus">3. IMUs</h3>
+
+<p>Learn about the differences between accelerometers, gyroscopes, and IMU’s in this <a href="https://www.sparkfun.com/pages/accel_gyro_guide">Sparkfun guide</a>.</p>
+
+<p>These sensors can be used to keep the robot’s drivetrain orientation, prevent it from tipping over, and more.</p>
+
+<figure><img class="docimage" src="images/main/navx.jpg" alt="" style="max-width: 400px" /><figcaption>navX</figcaption></figure>
+
+<p>We most commonly use the <a href="https://www.kauailabs.com/store/index.php?route=product/product&amp;product_id=56">navX-MXP by Kauai Labs</a>. It plugs in the the RoboRio’s MXP port or you can use their omnimount, and is easy to program using their provided libraries.</p>
+
+<p>Other IMUs teams use include the Pigeon IMU (which is easily integrated with Talon SRX’s), ADIS16448 by Analog Devices, and Spartan Board by 971.</p>
 
 <h3 id="4-limit-switches">4. Limit Switches</h3>
 
+<figure><img class="docimage" src="images/main/limitswitch.jpg" alt="" style="max-width: 250px" /><figcaption>Limit switch</figcaption></figure>
+
+<p>Read <a href="http://frc-pdr.readthedocs.io/en/latest/motors/limitswitch.html">this article</a> to learn what limit switches are, how to wire them, and how to program them. WPILib also has an <a href="http://wpilib.screenstepslive.com/s/currentCS/m/java/l/599744-using-limit-switches-to-control-behavior">article</a> on programming limit switches. When using a limit switch, keep in mind if it’s normally open or normally closed.</p>
+
+<p>Hall effect sensors can be used as a contactless limit switch. We recommend <a href="https://www.andymark.com/Electrical-p/am-3313.htm">this sensor</a> intended for use on the DART actuator. If you’d like, you can learn about how hall effect sensors work <a href="https://www.electronics-tutorials.ws/electromagnetism/hall-effect.html">here</a>.</p>
+
+<figure><img class="docimage" src="images/main/halleffect.gif" alt="" style="max-width: 400px" /><figcaption>Hall effect</figcaption></figure>
+
 <h3 id="5-other-not-so-common-ones-but-maybe-useful">5. Other Not So Common Ones But Maybe Useful</h3>
 
+<ul>
+  <li>Ultrasonic</li>
+  <li><a href="http://www.clippard.com/cms/wiki/magnetic-reed-switches-position-location">Reed switches</a> (usually on pneumatic cylinders)</li>
+  <li><a href="https://learn.adafruit.com/ir-sensor/overview">IR sensors</a></li>
+  <li><a href="https://learn.adafruit.com/ir-breakbeam-sensors?view=all">Break beam sensor</a></li>
+  <li><a href="https://www.sparkfun.com/news/2435">LIDAR</a> (probably overkill)</li>
+  <li>Cameras in the <a href="/main-vision.html">Vision section</a></li>
+</ul>
+
 <h2 id="programming-sensors">Programming Sensors</h2>
+
+<p>Take a look at WPILib’s official <a href="https://wpilib.screenstepslive.com/s/currentCS/m/java/c/88895">sensor section</a>. They provide information and code examples on how to implement several sensors in your FRC robot.</p>
+
+<p>Reference the Talon SRX user guide and Phoenix Framework documentation to program CTRE sensors (SRX Mag Encoder, Talon Tach, etc.)</p>
 
 <h2 id="further-learning">Further Learning</h2>
 
@@ -586,7 +639,7 @@ $('#toc').on('click', 'a', function() {
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2018 FRC Team 4159 CardinalBotics. All rights reserved. <br />
- Site last generated: Jun 27, 2018 <br />
+ Site last generated: Jun 28, 2018 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>
