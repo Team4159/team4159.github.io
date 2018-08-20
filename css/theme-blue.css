@@ -1,11 +1,11 @@
 .summary {
     color: #808080;
-    border-left: 5px solid #2191FB;
+    border-left: 5px solid #008a87;
     font-size:16px;
 }
 
 
-h3 {color: #2191FB; }
+h3 {color: #008a87; }
 h4 {color: #808080; }
 
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
@@ -54,11 +54,11 @@ a.navbar-brand:hover {
 }
 
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
-    color: #2191FB;
+    color: #008a87;
 }
 
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
-    background-color: #2191FB;
+    background-color: #008a87;
     color: #ffffff;
 }
 
@@ -86,10 +86,10 @@ a.navbar-brand:hover {
 }
 
 .printTitle {
-    color: #2191FB !important;
+    color: #008a87 !important;
 }
 
-body.print h1 {color: #2191FB !important; font-size:28px !important;}
+body.print h1 {color: #008a87 !important; font-size:28px !important;}
 body.print h2 {color: #595959 !important; font-size:20px !important;}
 body.print h3 {color: #E50E51 !important; font-size:14px !important;}
 body.print h4 {color: #679DCE !important; font-size:14px; font-style: italic !important;}
@@ -99,14 +99,14 @@ body.print h4 {color: #679DCE !important; font-size:14px; font-style: italic !im
 }
 
 div.sidebarTitle {
-    color: #2191FB;
+    color: #008a87;
 }
 
 li.sidebarTitle {
   margin-top:20px;
     font-weight:normal;
     font-size:130%;
-    color: #2191FB;
+    color: #008a87;
     margin-bottom:10px;
     margin-left: 5px;
 
