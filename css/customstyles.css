@@ -114,6 +114,17 @@ margin-top: -40px
     color: gray;
 }
 
+em {
+
+    padding-bottom:12px;
+    padding-top:6px;
+    max-width: 90%;
+    margin-bottom:20px;
+    font-style: italic;
+    color: #333;
+
+}
+
 table {
     background-color: transparent;
 }
@@ -127,7 +138,7 @@ th {
     text-align: left;
 }
 table {
-    max-width: 90%;
+    max-width: 100%;
     margin-bottom: 20px;
     border: 1px solid #dedede;
 }
@@ -138,19 +149,26 @@ table > tfoot > tr > th,
 table > thead > tr > td,
 table > tbody > tr > td,
 table > tfoot > tr > td {
-    padding: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
     line-height: 1.42857143;
     vertical-align: top;
     border-top: 1px solid #ddd;
+    /*background-color:white;*/
 }
+
 table > thead > tr > th {
     vertical-align: bottom;
-    border-bottom: 2px solid #ddd;
+    border-bottom: 0px solid #ddd;
     text-transform: none;
-    background-color: #777;
-    color: white;
+    /*background-color: white;*/
     text-align: left;
 }
+
+table > tbody >
+
 table > caption + thead > tr:first-child > th,
 table > colgroup + thead > tr:first-child > th,
 table > thead:first-child > tr:first-child > th,
@@ -158,10 +176,22 @@ table > caption + thead > tr:first-child > td,
 table > colgroup + thead > tr:first-child > td,
 table > thead:first-child > tr:first-child > td {
     border-top: 0;
-}
-
+    }
+/*
 table > tbody > tr:nth-of-type(odd) {
     background-color: #f9f9f9;
+}
+*/
+
+
+table > tbody > tr:last-child {
+    background-color: whitesmoke;
+    font-size:12px;
+    text-align: center;
+}
+
+table > tbody > tr:last-child > td > em{
+    color: grey;
 }
 
 table col[class*="col-"] {
@@ -896,7 +926,7 @@ span.soft {
     width: auto;
     height: auto;
     max-width: 100%;
-    max-height: 100%;
+    max-height: 40%;
 }
 
 .videoThumbs img {
@@ -908,8 +938,7 @@ span.soft {
 
 @media only screen and (min-width: 900px), only screen and (min-device-width: 900px) {
     .col-md-9 img {
-        max-width: 700px;
-        max-height: 700px;
+        max-width: auto;
     }
 }
 
