@@ -76,7 +76,7 @@
 "tags": "",
 "keywords": "command based, programming, wpilib",
 "url": "main_command_based_programming.html",
-"summary": "test"
+"summary": "How we organize our robot code"
 }
 ,
 
@@ -353,6 +353,16 @@
 
 
 
+
+
+{
+"title": "2019 Build Season Week 1",
+"tags": "blog",
+"keywords": "",
+"url": "week-1-2019.html",
+"summary": "Planning and meetings..."
+}
+,
 
 
 {

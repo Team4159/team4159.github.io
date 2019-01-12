@@ -5,9 +5,31 @@
         <description>FRC Team 4159 CardinalBotics' project documentation, references, and blog on FRC software, controls, and electronics</description>
         <link>http://localhost:4000/</link>
         <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sun, 01 Jul 2018 19:15:31 -0700</pubDate>
-        <lastBuildDate>Sun, 01 Jul 2018 19:15:31 -0700</lastBuildDate>
+        <pubDate>Fri, 11 Jan 2019 21:13:32 -0800</pubDate>
+        <lastBuildDate>Fri, 11 Jan 2019 21:13:32 -0800</lastBuildDate>
         <generator>Jekyll v3.7.3</generator>
+        
+        <item>
+            <title>2019 Build Season Week 1</title>
+            <description>&lt;p&gt;Our first programming meeting took place on Wednesday (1/9/2019). We went over the build season schedule and goals for programming members. Students who were in the Beginning Programming group are expected to be comfortable writing robot code and wire basic FRC robots by the end of the semester. Students coming from the Advanced Programming group are expected to shadow veteran members and work on group programming projects to learn and possibly contribute to our robot codebase. They are also expected to understand this year’s codebase and electrical layout to be useful and gain experience in the pits in competition.&lt;/p&gt;
+
+&lt;p&gt;On Friday (1/11/2019) we had an unexpected programming meeting with a smaller group of people. Aaron, a new software mentor this year, led a mini-lecture &lt;a href=&quot;https://www.atlassian.com/agile/project-management/user-stories&quot;&gt;Agile User Stories&lt;/a&gt;. We decided to implement this using Github Projects on our new &lt;a href=&quot;https://github.com/Team4159/FRC-2019/projects/&quot;&gt;FRC-2019&lt;/a&gt; repository. In our setup, each “project” is a storyboard and within a project we have a kanban board with columns titled “To Do”, “In Progress”, “Waiting/Blocked”, “Quality Assurance”, and “Done”. We can put tasks in each of the storyboards and assign people to be accountable for them. We hope this will increase organization, transparency, and get more members involved in our software process.&lt;/p&gt;
+
+&lt;p&gt;Onto the hardware side, we received the new &lt;a href=&quot;http://connecttech.com/product/orbitty-carrier-for-nvidia-jetson-tx2-tx1/&quot;&gt;Orbitty carrier board&lt;/a&gt; to use with our Jetson TX1. This will reduce space on our electronics board as well as replace our faulty development board that came with the Jetson. We are planning on setting it up in the following days.&lt;/p&gt;
+
+&lt;p&gt;Our current plan for computer vision are to use IR cameras and IR LED rings. An advantage to this method is that we do not rely on visible light, a factor that may differ in playing fields. We contacted &lt;a href=&quot;https://www.e-consystems.com/&quot;&gt;e-con Systems&lt;/a&gt; for an educational sample or discount and are currently waiting for a response.&lt;/p&gt;
+
+&lt;p&gt;We have been working with the design team to CAD our electronics board on the bellypan. We are prioritizing shorter wire runs to reduce energy lost. With careful planning, our battery and PDP have been placed as it will serve as the backbone of the entire electrical system. We plan on mounting the breaker somewhere on the elevator, which will be designed later. For the first time, we will max out our PDP outputs with 16 motor controllers. Although we may not be using 16 motors, the extras will be kept as spares. We are looking into using &lt;a href=&quot;https://www.digikey.com/en/product-highlight/k/keystone/anti-vibration-grommets&quot;&gt;anti-vibration rubber grommets&lt;/a&gt; in order to reduce shock in our electrical components. This is out of caution because we plan to be dropping half a foot every match. We hope to finalize our electronics CAD over the next few days.&lt;/p&gt;
+
+</description>
+            <pubDate>Fri, 11 Jan 2019 00:00:00 -0800</pubDate>
+            <link>http://localhost:4000/week-1-2019.html</link>
+            <guid isPermaLink="true">http://localhost:4000/week-1-2019.html</guid>
+            
+            <category>blog</category>
+            
+            
+        </item>
         
         <item>
             <title>First post!</title>
