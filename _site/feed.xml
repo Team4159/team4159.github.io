@@ -5,9 +5,50 @@
         <description>FRC Team 4159 CardinalBotics' project documentation, references, and blog on FRC software, controls, and electronics</description>
         <link>http://localhost:4000/</link>
         <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Fri, 11 Jan 2019 21:13:32 -0800</pubDate>
-        <lastBuildDate>Fri, 11 Jan 2019 21:13:32 -0800</lastBuildDate>
+        <pubDate>Sat, 19 Jan 2019 10:30:30 -0800</pubDate>
+        <lastBuildDate>Sat, 19 Jan 2019 10:30:30 -0800</lastBuildDate>
         <generator>Jekyll v3.7.3</generator>
+        
+        <item>
+            <title>2019 Build Season Week 2</title>
+            <description>&lt;h3 id=&quot;computer-vision&quot;&gt;Computer Vision&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;We met up with Ron, a new mentor this year, to discuss vision techniques and try out different cameras and lighting.&lt;/li&gt;
+  &lt;li&gt;We used the &lt;a href=&quot;https://www.microsoft.com/accessories/en-us/products/webcams/lifecam-hd-3000/t3h-00011&quot;&gt;Microsoft Lifecam HD-3000&lt;/a&gt;, Canon DSLR, MacBook Pro Facetime HD Camera, and the iPhone XS Max camera.&lt;/li&gt;
+  &lt;li&gt;We used red LED rings, green LED rings, and the iPhone flash.&lt;/li&gt;
+  &lt;li&gt;Using the Ring security camera, IR did not work as well, but we will do further testing.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure&gt;&lt;img class=&quot;docimage&quot; src=&quot;images/blog/flash-tape.jpg&quot; alt=&quot;&quot; style=&quot;max-width: 400px&quot; /&gt;&lt;figcaption&gt;Shot using the iPhone XS Max with “Live Photo” and flash. The reflective tape is on a gray background (a laptop), similar to the color of the rocket on the game field.&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;figure&gt;&lt;img class=&quot;docimage&quot; src=&quot;images/blog/green-tape-far.JPG&quot; alt=&quot;&quot; style=&quot;max-width: 400px&quot; /&gt;&lt;figcaption&gt;Shot using the iPhone XS Max with a green LED ring around the dual camera. As you can see, from across the classroom, reflective tape still shines bright green, a stark contrast from the background.&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;electrical&quot;&gt;Electrical&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;We flashed new firmware on the RoboRio, Talon SRX’s, Victor SPX’s, and PDP using the new Phoenix Tuner software.&lt;/li&gt;
+  &lt;li&gt;PDP, Talon SRX’s, Victor SPX’s, VRM, PCM’s, and 6 Solenoid Manifold have all been mounted on the practice robot electronics board.&lt;/li&gt;
+  &lt;li&gt;We have yet to mount the RoboRio because of the lack of 4-40 screws. We are also planning on ordering more 8-32.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;organization&quot;&gt;Organization&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Switching to Agile software development has worked well this past week. Tasks were being moved to the ‘In Progress’ and ‘Quality Assurance’ columns.&lt;/li&gt;
+  &lt;li&gt;More students are involved and held accountable for their work.&lt;/li&gt;
+  &lt;li&gt;We will see in the coming weeks if this organization method holds.&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+            <pubDate>Sat, 19 Jan 2019 00:00:00 -0800</pubDate>
+            <link>http://localhost:4000/week-2-2019.html</link>
+            <guid isPermaLink="true">http://localhost:4000/week-2-2019.html</guid>
+            
+            <category>blog</category>
+            
+            
+        </item>
         
         <item>
             <title>2019 Build Season Week 1</title>
