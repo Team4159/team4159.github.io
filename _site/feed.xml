@@ -5,9 +5,47 @@
         <description>FRC Team 4159 CardinalBotics' project documentation, references, and blog on FRC software, controls, and electronics</description>
         <link>http://localhost:4000/</link>
         <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sat, 19 Jan 2019 10:30:30 -0800</pubDate>
-        <lastBuildDate>Sat, 19 Jan 2019 10:30:30 -0800</lastBuildDate>
+        <pubDate>Sat, 26 Jan 2019 12:17:58 -0800</pubDate>
+        <lastBuildDate>Sat, 26 Jan 2019 12:17:58 -0800</lastBuildDate>
         <generator>Jekyll v3.7.3</generator>
+        
+        <item>
+            <title>2019 Build Season Week 3</title>
+            <description>&lt;h3 id=&quot;robot-software&quot;&gt;Robot Software&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;We received a more final design consensus from the design team.&lt;/li&gt;
+  &lt;li&gt;Almost all subsystem and command classes have been created to allow for driver control. This includes: Drivetrain, Elevator, Feeder, Grabber, CargoExtender, and Hatch.&lt;/li&gt;
+  &lt;li&gt;This upcoming week we hope to test our code on an assembled drivetrain.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;image-recognition&quot;&gt;Image Recognition&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;We have made significant progress in testing IR light instead of green visible light reflecting off the retroreflective tape.&lt;/li&gt;
+  &lt;li&gt;We are using a camera &lt;a href=&quot;https://www.amazon.com/NEEWER-58MM-Infrared-Filter-Camera/dp/B003U65A7E/&quot;&gt;IR filter&lt;/a&gt; lens in front of a &lt;a href=&quot;https://www.amazon.com/Sony-PlayStation-Camera-Bulk-Packaging-Pc/dp/B0072I2240&quot;&gt;PlayStation Eye&lt;/a&gt; camera, which we chose for its cost and higher IR sensitivity than most cameras&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure&gt;&lt;img class=&quot;docimage&quot; src=&quot;images/blog/ir-leds-through-filter.jpg&quot; alt=&quot;&quot; style=&quot;max-width: 300px&quot; /&gt;&lt;figcaption&gt;IR LED ring shown through IR filter&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Using generated code from GRIP and employing vision techniques, we were able to detect whether two pieces of tape were to be grouped together or not, drawing a bounding box around them.&lt;/li&gt;
+  &lt;li&gt;Our next steps are to test edge cases where more than 2 tape are visible and when the camera is at an angle from the tape&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure&gt;&lt;img class=&quot;docimage&quot; src=&quot;images/blog/pre-processing.png&quot; alt=&quot;&quot; style=&quot;max-width: 600px&quot; /&gt;&lt;figcaption&gt;Pre-processing&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;figure&gt;&lt;img class=&quot;docimage&quot; src=&quot;images/blog/post-processing.png&quot; alt=&quot;&quot; style=&quot;max-width: 600px&quot; /&gt;&lt;figcaption&gt;Post-processing&lt;/figcaption&gt;&lt;/figure&gt;
+
+</description>
+            <pubDate>Sat, 26 Jan 2019 00:00:00 -0800</pubDate>
+            <link>http://localhost:4000/week-3-2019.html</link>
+            <guid isPermaLink="true">http://localhost:4000/week-3-2019.html</guid>
+            
+            <category>blog</category>
+            
+            
+        </item>
         
         <item>
             <title>2019 Build Season Week 2</title>
