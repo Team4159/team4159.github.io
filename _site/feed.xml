@@ -5,9 +5,51 @@
         <description>FRC Team 4159 CardinalBotics' project documentation, references, and blog on FRC software, controls, and electronics</description>
         <link>http://localhost:4000/</link>
         <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sat, 26 Jan 2019 12:17:58 -0800</pubDate>
-        <lastBuildDate>Sat, 26 Jan 2019 12:17:58 -0800</lastBuildDate>
+        <pubDate>Tue, 05 Feb 2019 14:49:46 -0800</pubDate>
+        <lastBuildDate>Tue, 05 Feb 2019 14:49:46 -0800</lastBuildDate>
         <generator>Jekyll v3.7.3</generator>
+        
+        <item>
+            <title>2019 Build Season Week 4</title>
+            <description>&lt;h3 id=&quot;electrical&quot;&gt;Electrical&lt;/h3&gt;
+
+&lt;p&gt;Our competition electronics board is in driving condition!&lt;/p&gt;
+
+&lt;p&gt;We mounted and wired our RoboRio, VRM, PCM,  8 Talon SRX’s, and 4 Victor SPX’s. The main breaker, radio, and RSL are still hanging around.&lt;/p&gt;
+
+&lt;p&gt;We used &lt;a href=&quot;https://www.wago.com/221/us/&quot;&gt;Wago Lever Nuts&lt;/a&gt; for the first time to connect the CAN bus. One trick we found is to only open one lever at a time and insert only one wire at a time instead of trying to insert both at once. There is also a helpful measurement marking on the side of the lever nut that indicates the length to strip.&lt;/p&gt;
+
+&lt;p&gt;Powering on the robot for the first time, we were horrified by the red and orange flashes on the motor controllers… that was no good. After electrical inspection, we found that the terminating resistor on the PDP was on. Using a handy plier we switched that off. We are terminating the CAN bus on the PCM side using a 120-ohm resistor.&lt;/p&gt;
+
+&lt;p&gt;Power cycling…  still flashing errors. We then looked into the software side. Using Phoenix Tuner we quickly identified that two of the Talons were assigned to an ID of 16. After assigning 15 to one and 16 to the other, the Talons blinked orange and all was good.&lt;/p&gt;
+
+&lt;video controls=&quot;controls&quot; width=&quot;40%&quot; height=&quot;40%&quot; name=&quot;First Drive&quot; src=&quot;https://files.slack.com/files-pri/T0GL3JJPM-FFV86K1EW/download/image_from_ios.mov&quot;&gt;&lt;/video&gt;
+
+&lt;h3 id=&quot;vision&quot;&gt;Vision&lt;/h3&gt;
+
+&lt;p&gt;After the last few weeks of hard work, we successfully created a Python script that recognizes and draws bounding boxes around the pairs of tape!&lt;/p&gt;
+
+&lt;p&gt;Different from previous years, this season, we made a major decision to use infrared LED rings as the main light source for the detection of the retroreflective tape. With an IR filter to block visible light, we are able to see only the reflected IR light, thus reducing optical interference available on the field and diminishing the effects of different competition lighting on our vision recognition software.&lt;/p&gt;
+
+&lt;figure&gt;&lt;img class=&quot;docimage&quot; src=&quot;images/blog/boundingbox-and-lines.png&quot; alt=&quot;&quot; style=&quot;max-width: 600px&quot; /&gt;&lt;figcaption&gt;Drawing lines fit to contours and bounding boxes.&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;p&gt;By using &lt;a href=&quot;https://github.com/WPIRoboticsProjects/GRIP&quot;&gt;GRIP&lt;/a&gt;, a computer vision engine, and the well known OpenCV library, we filtered the IR images gathered from the camera, created contours from those images. and drew bounding rectangles around the tapes to recognize the tape.&lt;/p&gt;
+
+&lt;p&gt;Grouping the tapes was a challenge. We tried multiple ways but eventually settled on a method that will check the intersections of the best fit lines for each pair of tapes. If the intersection is above the center of the two tapes, we group them together as a target, otherwise, the two tapes are discarded. Though this method is not fail-proof, it seems to be working well under our team’s testing condition. However, we would love to have a chance to test it on the real practice field being built at Gateway.&lt;/p&gt;
+
+&lt;p&gt;Now, as the “eyes” of the robot had been created, the next challenge is to see how will we relay this message to the “brain” (RoboRio), and make the “body” respond to what it sees. We are excited to see what will happen in the following weeks!&lt;/p&gt;
+
+&lt;figure&gt;&lt;img class=&quot;docimage&quot; src=&quot;images/blog/align-strategy-whiteboard.JPG&quot; alt=&quot;&quot; style=&quot;max-width: 600px&quot; /&gt;&lt;figcaption&gt;One of the many robot alignment strategies we have been discussing with mentors.&lt;/figcaption&gt;&lt;/figure&gt;
+
+</description>
+            <pubDate>Tue, 05 Feb 2019 00:00:00 -0800</pubDate>
+            <link>http://localhost:4000/week-4-2019.html</link>
+            <guid isPermaLink="true">http://localhost:4000/week-4-2019.html</guid>
+            
+            <category>blog</category>
+            
+            
+        </item>
         
         <item>
             <title>2019 Build Season Week 3</title>
