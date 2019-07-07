@@ -892,6 +892,7 @@ span.soft {
 
     ul#mysidebar {
         width: 225px;
+        position: fixed;
     }
 }
 
@@ -1218,10 +1219,7 @@ h4.panel-title {
     }
     .navbar-nav>li {
         float: none;
-    }
-    .navbar-nav>li>a {
-        padding-top: 10px;
-        padding-bottom: 10px;
+        margin-bottom: 10px;
     }
     .collapse.in{
         display:block !important;

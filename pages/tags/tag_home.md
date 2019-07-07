@@ -1,5 +1,5 @@
 ---
-title: "Home pages"
+title: "Home Pages"
 tagName: home
 search: exclude
 permalink: tag_home.html
