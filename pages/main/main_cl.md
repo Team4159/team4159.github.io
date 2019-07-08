@@ -5,4 +5,5 @@ summary: "test"
 sidebar: main_sidebar
 permalink: main_cl.html
 folder: main
+tags: [programming]
 ---

@@ -5,6 +5,7 @@ summary: "Wire with good practices to prevent sudden brownouts and comm drops"
 sidebar: main_sidebar
 permalink: main_wiring.html
 folder: main
+tags: [electronics]
 ---
 
 Read WPILib's wiring guide [here](https://wpilib.screenstepslive.com/s/currentCS/m/cs_hardware/l/144971-wiring-the-frc-control-system), their recommended [best practices](https://wpilib.screenstepslive.com/s/currentCS/m/cs_hardware/l/826661-wiring-best-practices), then take a look at our notes below on our wiring standards.

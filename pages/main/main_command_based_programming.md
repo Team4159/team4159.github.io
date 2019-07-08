@@ -5,6 +5,7 @@ summary: "How we organize our robot code"
 sidebar: main_sidebar
 permalink: main_command_based_programming.html
 folder: main
+tags: [programming]
 ---
 
 ## Overview 

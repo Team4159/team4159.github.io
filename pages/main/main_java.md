@@ -4,6 +4,7 @@ keywords: programming, java
 sidebar: main_sidebar
 permalink: main_java.html
 folder: main
+tags: [programming]
 ---
 
 ## Main Course

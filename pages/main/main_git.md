@@ -5,6 +5,7 @@ summary: "test"
 sidebar: main_sidebar
 permalink: main_git.html
 folder: main
+tags: [programming]
 ---
 
 Why version control? Read this for an easy to understand explanation.

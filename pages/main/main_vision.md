@@ -5,6 +5,7 @@ summary: "test"
 sidebar: main_sidebar
 permalink: main_vision.html
 folder: main
+tags: [control-systems]
 ---
 
 WPILib hosted a [conference](http://wp.wpi.edu/wpilib/files/2018/05/Computer-Vision-in-FIRST.pdf) in Houston 2018 on WPILib software (GRIP, CameraServer class, etc.) and hardware examples for cv.

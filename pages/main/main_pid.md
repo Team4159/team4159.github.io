@@ -4,6 +4,7 @@ keywords: programming, java
 sidebar: main_sidebar
 permalink: main_pid.html
 folder: main
+tags: [control-systems]
 ---
 
 This [video](https://www.youtube.com/watch?v=UOuRx9Ujsog) is a good comprehensive starting explanation on PID control and how to tune using the Zieglor-Nichols method.
