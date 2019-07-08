@@ -5,6 +5,7 @@ sidebar: main_sidebar
 summary: "There are several core electrical components that have to be present in every FRC robot to be FRC legal."
 permalink: main_frc_electronics.html
 folder: main
+tags: [electronics]
 ---
 
 ## 1. Content

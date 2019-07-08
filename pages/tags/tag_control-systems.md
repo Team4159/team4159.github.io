@@ -1,8 +1,8 @@
 ---
-title: "Home Pages"
-tagName: home
+title: "Control Systems Pages"
+tagName: control-systems
 search: exclude
-permalink: tag_home.html
+permalink: tag_control-systems.html
 sidebar: sitemap_sidebar
 folder: tags
 ---

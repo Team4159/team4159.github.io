@@ -1,8 +1,8 @@
 ---
-title: "Home Pages"
-tagName: home
+title: "Electronics Pages"
+tagName: electronics
 search: exclude
-permalink: tag_home.html
+permalink: tag_electronics.html
 sidebar: sitemap_sidebar
 folder: tags
 ---

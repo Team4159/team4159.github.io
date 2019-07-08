@@ -1,11 +1,12 @@
 ---
-title: "Blog Pages"
-tagName: blog
+title: "Competition Posts"
+tagName: competition
 search: exclude
-permalink: tag_blog.html
+permalink: tag_competition.html
 sidebar: sitemap_sidebar
 folder: tags
 ---
+
 {% include taglogic.html %}
 
 {% include links.html %}

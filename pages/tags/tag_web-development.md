@@ -1,8 +1,8 @@
 ---
-title: "Home Pages"
-tagName: home
+title: "Web Development Pages"
+tagName: web-development
 search: exclude
-permalink: tag_home.html
+permalink: tag_web-development.html
 sidebar: sitemap_sidebar
 folder: tags
 ---

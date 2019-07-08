@@ -5,6 +5,7 @@ summary: "Sensors are what allow your robot to interact with the physical world.
 sidebar: main_sidebar
 permalink: main_sensors.html
 folder: main
+tags: [electronics, control-systemsw]
 ---
 
 ## Preface

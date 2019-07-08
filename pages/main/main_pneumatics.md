@@ -5,6 +5,7 @@ summary: "test"
 sidebar: main_sidebar
 permalink: main_pneumatics.html
 folder: main
+tags: [electronics]
 ---
 
 These slides from a Waterloo Regional workshop provided by SimBotics is a good introduction on why to use pneumatics, its components, and applications.

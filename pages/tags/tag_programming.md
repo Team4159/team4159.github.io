@@ -1,8 +1,8 @@
 ---
-title: "Home Pages"
-tagName: home
+title: "Programming Pages"
+tagName: programming
 search: exclude
-permalink: tag_home.html
+permalink: tag_programming.html
 sidebar: sitemap_sidebar
 folder: tags
 ---
