@@ -1,8 +1,8 @@
 ---
-title: "Blog Posts"
-tagName: blog
+title: "Electronics Pages"
+tagName: electronics
 search: exclude
-permalink: tag_blog.html
+permalink: tag_electronics.html
 sidebar: sitemap_sidebar
 folder: tags
 ---

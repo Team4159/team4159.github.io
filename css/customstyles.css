@@ -183,17 +183,6 @@ table > tbody > tr:nth-of-type(odd) {
 }
 */
 
-
-table > tbody > tr:last-child {
-    background-color: whitesmoke;
-    font-size:12px;
-    text-align: center;
-}
-
-table > tbody > tr:last-child > td > em{
-    color: grey;
-}
-
 table col[class*="col-"] {
     position: static;
     display: table-column;
@@ -1168,6 +1157,19 @@ div.box.box1 {
         word-wrap: break-word;       /* Internet Explorer 5.5+ */
         font-size: 14px;
     }
+
+.article-navigation {
+    font-size: 14px;
+}
+
+.article-navigation .previous {
+    float: right;
+}
+
+.article-navigation .next {
+    float: left;
+    text-align: left;
+}
 
 /*
  * Let's target IE to respect aspect ratios and sizes for img tags containing SVG files

@@ -1,8 +1,8 @@
 ---
-title: "Blog Posts"
-tagName: blog
+title: "Programming Pages"
+tagName: programming
 search: exclude
-permalink: tag_blog.html
+permalink: tag_programming.html
 sidebar: sitemap_sidebar
 folder: tags
 ---

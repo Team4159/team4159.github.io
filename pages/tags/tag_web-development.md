@@ -1,8 +1,8 @@
 ---
-title: "Blog Posts"
-tagName: blog
+title: "Web Development Pages"
+tagName: web-development
 search: exclude
-permalink: tag_blog.html
+permalink: tag_web-development.html
 sidebar: sitemap_sidebar
 folder: tags
 ---

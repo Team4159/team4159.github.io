@@ -1,8 +1,8 @@
 ---
-title: "Blog Posts"
-tagName: blog
+title: "Build Season Posts"
+tagName: build-season
 search: exclude
-permalink: tag_blog.html
+permalink: tag_build-season.html
 sidebar: sitemap_sidebar
 folder: tags
 ---

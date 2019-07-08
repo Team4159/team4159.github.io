@@ -1,8 +1,8 @@
 ---
-title: "Blog Posts"
-tagName: blog
+title: "Control Systems Pages"
+tagName: control-systems
 search: exclude
-permalink: tag_blog.html
+permalink: tag_control-systems.html
 sidebar: sitemap_sidebar
 folder: tags
 ---
