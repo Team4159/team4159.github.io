@@ -214,19 +214,21 @@ p.post-meta {font-size: 80%; color: #777;}
 
 .entry-date{font-size:14px;font-size:0.875rem;line-height:1.71429;margin-bottom:0;text-transform:uppercase;}
 
-/* search area */
+/* ` area */
+#search-demo-container {
+    position: relative;
+}
+
 #search-demo-container ul#results-container {
     list-style: none;
     font-size: 12px;
     background-color: white;
     position: absolute;
-    top: 40px; /* if you change anything about the nav, you'll prob. need to reset the top and left values here.*/
+    z-index: 9999;
     left: 20px;
-    z-index: -1;
-    width:223px;
+    width: 240px;
     border-left: 1px solid #dedede;
 }
-
 
 ul#results-container a {
     background-color: transparent;
@@ -236,10 +238,10 @@ ul#results-container a:hover {
     color: black;
 }
 
-
 #search-demo-container a:hover {
     color: black;
 }
+
 #search-input {
     padding: .5em;
     margin-left:20px;
@@ -1102,8 +1104,14 @@ div.box.box1 {
     margin-left: -20px;
 }
 
+/* Article Navigation */
+
 .article-navigation {
     font-size: 14px;
+}
+
+.article-navigation > a {
+    width: 50%;
 }
 
 .article-navigation .previous {
