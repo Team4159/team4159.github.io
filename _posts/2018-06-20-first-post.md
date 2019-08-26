@@ -1,8 +1,6 @@
 ---
 title:  "First post!"
 published: true
-permalink: first-post.html
-sidebar: sitemap_sidebar
 summary: "First post, oh my!"
 tags: [blog]
 ---

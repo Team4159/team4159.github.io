@@ -12,7 +12,7 @@ site_title: CardinalBotics Programming Portal
 company_name: FRC Team 4159 CardinalBotics
 # this appears in the footer
 
-github_editme_path: team4159/team4159.github.io/blob/master/
+github_editme_path: team4159/team4159.github.io/blob/master
 # if you're using Github, provide the basepath to the branch you've created for reviews, following the sample here. if not, leave this value blank.
 
 # gitlab_editme_path: tomjoht/documentation-theme-jekyll/blob/gh-pages/
@@ -65,34 +65,50 @@ collections:
 # collections are declared here. this renders the content in _tooltips and processes it, but doesn't output it as actual files in the output unless you change output to true
 
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
       type: "pages"
     values:
       layout: "page"
-      comments: true
       search: true
-      sidebar: home_sidebar
-      topnav: topnav
-  -
-    scope:
+      topnav: tospnav
+  - scope:
+      path: "main"
+      type: "pages"
+    values:
+      sidebar: main_sidebar
+  - scope:
+      path: "tags"
+      type: "pages"
+    values:
+      sidebar: sitemap_sidebar
+      search: exclude
+  - scope:
+      path: "blog"
+      type: "pages"
+    values:
+      sidebar: sitemap_sidebar
+  - scope:
+      path: "projects"
+      type: "pages"
+    values:
+      sidebar: projects_sidebar
+  - scope:
       path: ""
       type: "posts"
     values:
       layout: "post"
-      comments: true
       search: true
-      sidebar: home_sidebar
+      sidebar: sitemap_sidebar
       topnav: topnav
 
 # these are defaults used for the frontmatter for these file types
 
 sidebars:
-- main_sidebar
-- projects_sidebar
-- sitemap_sidebar
-- other
+  - main_sidebar
+  - projects_sidebar
+  - sitemap_sidebar
+  - other
 
 description: "FRC Team 4159 CardinalBotics' project documentation, references, and blog on FRC software, controls, and electronics"
 

@@ -1,0 +1,29 @@
+---
+title: Blog Archive
+sidebar: sitemap_sidebar
+keywords: news, blog, updates, release notes, announcements
+permalink: blog_archive.html
+toc: false
+folder: blog
+---
+<div class="home">
+    <div class="post-list">
+        <section>
+            {% for post in site.posts %}
+                {% assign year = post.date | date: '%Y' %}
+                {% assign nyear = post.next.date | date: '%Y' %}
+                {% if post.next == null %}
+                    <h3>{{ year }}</h3>
+                    <ul>
+                {% elsif year != nyear %}
+                    </ul>
+                    <h3>{{ year }}</h3>
+                    <ul>
+                {% endif %}
+                <li><time>{{ post.date | date:"%d %b" }}</time><a href="{{ post.url }}">{{ post.title }}</a></li>
+            {% endfor %}
+            </ul>
+        </section>
+        <hr/>
+    </div>
+</div>
