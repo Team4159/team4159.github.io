@@ -71,7 +71,7 @@ defaults:
     values:
       layout: "page"
       search: true
-      topnav: tospnav
+      topnav: topnav
   - scope:
       path: "main"
       type: "pages"
