@@ -1116,11 +1116,11 @@ div.box.box1 {
 
 .article-navigation .previous {
     float: right;
+    text-align: right;
 }
 
 .article-navigation .next {
     float: left;
-    text-align: left;
 }
 
 /*

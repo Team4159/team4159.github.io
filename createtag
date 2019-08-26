@@ -7,7 +7,7 @@
 #   ./createtag linux bsd
 
 CMDLINEPARAM=1     #  Takes at least one param.
-TAGDIR="pages/tags"
+TAGDIR="tags"
 
 if [ $# -ge $CMDLINEPARAM ]
 then
@@ -29,15 +29,10 @@ cat <<EOF >"${TAGDIR}/tag_${tag}.md"
 ---
 title: "${title}"
 tagName: ${tag}
-search: exclude
-permalink: tag_${tag}.html
-sidebar: sitemap_sidebar
-folder: tags
 ---
 
 {% include taglogic.html %}
 
-{% include links.html %}
 EOF
 
 echo "  - ${tag}" >> _data/tags.yml

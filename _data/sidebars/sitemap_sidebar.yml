@@ -7,11 +7,14 @@ entries:
     output: web
     folderitems:
     - title: Home
-      url: /index.html
+      url: /
       output: web
     - title: Projects
-      url: /projects.html
+      url: /projects/
       output: web
     - title: Blog
-      url: /blog.html
+      url: /blog/
+      output: web
+    - title: Blog Archive
+      url: /blog_archive/
       output: web
