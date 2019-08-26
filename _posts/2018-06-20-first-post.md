@@ -11,5 +11,3 @@ This is the first blog post.
 
 Love,<br>
 Your 2018 programming team
-
-{% include links.html %}

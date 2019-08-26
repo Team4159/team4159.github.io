@@ -33,7 +33,6 @@ tagName: ${tag}
 
 {% include taglogic.html %}
 
-{% include links.html %}
 EOF
 
 echo "  - ${tag}" >> _data/tags.yml

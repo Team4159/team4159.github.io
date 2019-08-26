@@ -4,5 +4,3 @@ tagName: electronics
 ---
 
 {% include taglogic.html %}
-
-{% include links.html %}

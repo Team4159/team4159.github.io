@@ -4,5 +4,3 @@ tagName: blog
 ---
 
 {% include taglogic.html %}
-
-{% include links.html %}

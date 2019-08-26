@@ -9,23 +9,23 @@ entries:
     folderitems:
 
     - title: Introduction
-      url: /main/general_programming/intro.html
+      url: /main/general_programming/intro
       output: web, pdf
 
     - title: Java
-      url: /main/general_programming/java.html
+      url: /main/general_programming/java
       output: web, pdf
 
     - title: OOP
-      url: /main/general_programming/oop.html
+      url: /main/general_programming/oop
       output: web, pdf
 
     - title: Command Line
-      url: /main/general_programming/cl.html
+      url: /main/general_programming/cl
       output: web, pdf
 
     - title: Git/Version Control
-      url: /main/general_programming/git.html
+      url: /main/general_programming/git
       output: web, pdf
 
   - title: Robot Programming
@@ -33,15 +33,15 @@ entries:
     folderitems:
 
     - title: Introduction
-      url: /main/robot_programming/intro.html
+      url: /main/robot_programming/intro
       output: web, pdf
 
     - title: WPILib and Gradle
-      url: /main/robot_programming/wpilib.html
+      url: /main/robot_programming/wpilib
       output: web, pdf
 
     - title: Command Based Programming
-      url: /main/robot_programming/command_based_programming.html
+      url: /main/robot_programming/command_based_programming
       output: web, pdf      
 
   - title: Electronics
@@ -49,31 +49,31 @@ entries:
     folderitems:
 
     - title: Introduction
-      url: /main/electronics/intro.html
+      url: /main/electronics/intro
       output: web, pdf
 
     - title: Basic Theory
-      url: /main/electronics/basic_theory.html
+      url: /main/electronics/basic_theory
       output: web, pdf
 
     - title: FRC Electronics
-      url: /main/electronics/frc_electronics.html
+      url: /main/electronics/frc_electronics
       output: web, pdf
 
     - title: Sensors
-      url: /main/electronics/sensors.html
+      url: /main/electronics/sensors
       output: web, pdf
 
     - title: Actuators
-      url: /main/electronics/actuators.html
+      url: /main/electronics/actuators
       output: web, pdf
 
     - title: Wiring
-      url: /main/electronics/wiring.html
+      url: /main/electronics/wiring
       output: web, pdf
 
     - title: Pneumatics
-      url: /main/electronics/pneumatics.html
+      url: /main/electronics/pneumatics
       output: web, pdf
 
   - title: Control Systems
@@ -81,23 +81,23 @@ entries:
     folderitems:
 
     - title: Introduction
-      url: /main/control_systems/intro.html
+      url: /main/control_systems/intro
       output: web, pdf
 
     - title: PID Control
-      url: /main/control_systems/pid.html
+      url: /main/control_systems/pid
       output: web, pdf
 
     - title: Computer Vision
-      url: /main/control_systems/vision.html
+      url: /main/control_systems/vision
       output: web, pdf
 
     - title: Motion Profiling
-      url: /main/control_systems/mp.html
+      url: /main/control_systems/mp
       output: web, pdf
 
     - title: Machine Learning
-      url: /main/control_systems/ml.html
+      url: /main/control_systems/ml
       output: web, pdf
 
   - title: Web Development
@@ -105,21 +105,21 @@ entries:
 
     folderitems:
     - title: Introduction
-      url: /main/web_development/intro.html
+      url: /main/web_development/intro
       output: web, pdf
 
     - title: React.js and Other Libraries
-      url: /main/web_development/reactjs.html
+      url: /main/web_development/reactjs
       output: web, pdf
 
     - title: Hybrid App Development
-      url: /main/web_development/hybrid_apps.html
+      url: /main/web_development/hybrid_apps
       output: web, pdf
 
     - title: Squarespace
-      url: /main/web_development/squarespace.html
-      output: web, pdf     
+      url: /main/web_development/squarespace
+      output: web, pdf
 
     - title: Jekyll
-      url: /main/web_development/jekyll.html
+      url: /main/web_development/jekyll
       output: web, pdf     

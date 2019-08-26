@@ -4,5 +4,3 @@ tagName: web-development
 ---
 
 {% include taglogic.html %}
-
-{% include links.html %}

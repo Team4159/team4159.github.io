@@ -4,5 +4,3 @@ tagName: build-season
 ---
 
 {% include taglogic.html %}
-
-{% include links.html %}

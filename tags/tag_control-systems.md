@@ -4,5 +4,3 @@ tagName: control-systems
 ---
 
 {% include taglogic.html %}
-
-{% include links.html %}
