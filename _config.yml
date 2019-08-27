@@ -61,7 +61,7 @@ kramdown:
 
 # filter used to process markdown. note that kramdown differs from github-flavored markdown in some subtle ways
 
-permalink: /blog/:year/:month/:day/:title
+permalink: /:title
 
 collections:
 # collections are declared here. this renders the content in _tooltips and processes it, but doesn't output it as actual files in the output unless you change output to true
@@ -103,6 +103,7 @@ defaults:
       search: true
       sidebar: sitemap_sidebar
       topnav: topnav
+      permalink: /blog/:year/:month/:day/:title
 
 # these are defaults used for the frontmatter for these file types
 

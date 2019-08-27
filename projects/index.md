@@ -1,6 +1,7 @@
 ---
 title: Projects Portal
 keywords: projects
+permalink: /projects
 toc: false
 ---
 

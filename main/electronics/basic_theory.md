@@ -97,7 +97,7 @@ In our case, PWM is used more for a communication purposes between components in
 ### Controller Area Network(CAN Bus)
 This is another method of communication between components. Rather than just altering signal send between different components, CAN is a protocol of communication between multiple components, allowing more complex information being transmitted. This method is becoming more and more popular, because more info can be acquired about components using this protocol.
 
-On our recent robots we use CAN, for more details on how to wire it check out [Wiring](main_wiring.md)
+On our recent robots we use CAN, for more details on how to wire it check out [Wiring](/wiring)
 
 
 ## Image sources

@@ -10,9 +10,11 @@
       <ul>
           {% for folderitem in folder.folderitems %}
           {% if folderitem.output contains "web" %}
+          {% assign segments = page.url | split: '/' %}
+          {% assign folder_name = folderitem.url | remove: '/' %}
           {% if folderitem.external_url %}
           <li><a href="{{folderitem.external_url}}" target="_blank">{{folderitem.title}}</a></li>
-          {% elsif page.url contains folderitem.url and folderitem.url != '/' %}
+          {% elsif page.url == folderitem.url or segments contains folder_name and folderitem.url != '/' %}
           <li class="active"><a href="{{folderitem.url}}">{{folderitem.title}}</a></li>
           {% elsif folderitem.type == "empty" %}
           <li><a href="{{folderitem.url}}">{{folderitem.title}}</a></li>
