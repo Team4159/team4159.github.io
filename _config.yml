@@ -96,6 +96,12 @@ defaults:
     values:
       sidebar: projects_sidebar
   - scope:
+      path: "projects/robots"
+      type: "pages"
+    values:
+      toc: false
+      layout: robot
+  - scope:
       path: ""
       type: "posts"
     values:
