@@ -18,17 +18,3 @@ entries:
     - title: 2017 - Red Dwarf (Offseason)
       url: /projects/robots/red_dwarf
       output: web, pdf
-
-  - title: Robot Software
-    output: web, pdf
-    folderitems:
-    - title: CardinalDash
-      url: /projects/robot_software/cardinal_dash
-      output: web, pdf
-
-  - title: Mobile/Web Apps
-    output: web, pdf
-    folderitems:
-    - title: CardinalScout
-      url: /projects/web_apps/cardinal_scout
-      output: web, pdf

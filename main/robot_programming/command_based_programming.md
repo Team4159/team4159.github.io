@@ -1,13 +1,15 @@
 ---
 title: Command Based Programming
 keywords: command based, programming, wpilib
-summary: "How we organize our robot code"
+summary: "A way to organize your robot code"
 tags: [programming]
 ---
 
 ## Overview 
 
-We follow the Command-based robot model to organize our robot code. This method of organization separates the robot code into subsystems and commands, and it allows us to utilize built-in support from WPILib.
+We used to follow the Command-based robot model to organize our robot code. This method of organization separates the robot code into subsystems and commands, and it allows us to utilize built-in support from WPILib.
+
+Recently, we are trying to move to a structure that meshes better with [Test Driven Development](/main/robot_programming/test_driven_development).
 
  |![Github Source Files Screenshot](../../images/main/command_based_programming/overview_robot_files.png)|
  |:---:|

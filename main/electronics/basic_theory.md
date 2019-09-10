@@ -16,7 +16,7 @@ It is common sense that we know electricity flows. The word "current" is used to
 Formally electric current is defined as the amount of charge traveling through a given cross section in a given amount of time. To make it less wordy, it means the flow of charge. **Remember current is the flow of charge, not electrons**.
 
 {% include image.html
-file="/electroBasicTheoryImg/current.gif" alt="electric current" caption = "Here is a conceptual representation of electric current"%}
+file="/main/electrical_theory/current.gif" alt="electric current" caption = "Here is a conceptual representation of electric current"%}
 
 ### What is charge?
 Charge is the fundamental quantity of electricity. There are positive charges and negative charges. In an atom, the electrons have negative charge, and the protons have positive charge. By convention, people usually look at the movement of positive charge going through a wire as current. *However, that does not mean current is the movement of protons through the wire*.
@@ -39,7 +39,7 @@ It is common sense that water flows from places that are high to places that are
 Now, what is voltage? **Voltage is the electric potential difference of two points** in space, but for our purposes, it is two points on our circuit. *Therefore, voltage is relative* By convention, when people refer to the voltage of a single point, it means the electric potential difference between that point and a point infinitely far away, which again by convention, have the electric potential of 0. In our case, when people refers to a single point on a circuit, they are comparing the electric potential at that point with "ground" or the negative terminal of your battery, which by convention have the electric potential, or voltage of 0.
 
 {% include image.html
-file="electroBasicTheoryImg/voltage.png" alt="electric voltage" caption = "Here is a conceptual representation of the relationship between current and voltage"%}
+file="main/electrical_theory/voltage.png" alt="electric voltage" caption = "Here is a conceptual representation of the relationship between current and voltage"%}
 
 ### Important Notes
 - Voltage is the potential difference between 2 points.

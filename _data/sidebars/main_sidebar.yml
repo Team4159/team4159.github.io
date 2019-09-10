@@ -42,7 +42,11 @@ entries:
 
     - title: Command Based Programming
       url: /main/robot_programming/command_based_programming
-      output: web, pdf      
+      output: web, pdf
+
+    - title: Test Driven Development
+      url: /main/robot_programming/test_driven_development
+      output: web, pdf
 
   - title: Electronics
     output: web, pdf
@@ -122,4 +126,4 @@ entries:
 
     - title: Jekyll
       url: /main/web_development/jekyll
-      output: web, pdf     
+      output: web, pdf
