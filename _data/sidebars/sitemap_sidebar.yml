@@ -10,11 +10,11 @@ entries:
       url: /
       output: web
     - title: Projects
-      url: /projects/
+      url: /projects
       output: web
     - title: Blog
-      url: /blog/
+      url: /blog
       output: web
     - title: Blog Archive
-      url: /blog_archive/
+      url: /blog_archive
       output: web

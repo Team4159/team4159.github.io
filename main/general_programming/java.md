@@ -4,11 +4,17 @@ keywords: programming, java
 tags: [programming]
 ---
 
-## Main Course
+## Intro
 
-"Java is the foundation for virtually every type of networked application and is the global standard for developing and delivering embedded applications, games, Web content, and enterprise software... Java enables you to efficiently develop and deploy exciting applications and services" - Oracle
+> "Java is the foundation for virtually every type of networked application and is the global standard for developing and delivering embedded applications, games, Web content, and enterprise software... Java enables you to efficiently develop and deploy exciting applications and services" - Oracle
 
 WPILib officially supports Java, C++, and LabView to program FRC robots. We use Java because it is more accessible to beginner programmers than C++, taught by our AP Computer Science class, and isn't a visual based language like LabView.
+
+Here are the slides for our 2019 ["Intro to Java" Workshop](https://docs.google.com/presentation/d/1lbRtThma51MtxJe8xr0eEvHgs1JqwC6S5PMEWdlA76U/edit#slide=id.p) for our rookie members.
+
+## MIT Course
+
+In the past, we've loosely followed MIT Course 6.092 to teach Java to rookie members.
 
 MIT Course 6.092, "Introduction to Programming in Java", offered online for free on MIT OpenCourseware is a great way to learn Java. The online course includes lecture notes and appropriate assignments. We recommend going through all lectures (1 - 7). The later lectures (4 - 7), overlap with our OOP section, so you may go through those in conjunction.
 

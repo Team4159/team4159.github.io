@@ -4,9 +4,9 @@ topnav:
 - title: Topnav
   items:
     - title: Projects
-      url: /projects/
+      url: /projects
     - title: Blog
-      url: /blog/
+      url: /blog
     - title: Git
       external_url: https://github.com/team4159/team4159.github.io
 

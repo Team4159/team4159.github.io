@@ -21,9 +21,7 @@ Encoders and potentiometers are both examples of rotary sensors - they measure r
 
 Read [this article](http://frc-pdr.readthedocs.io/en/latest/motors/encoders.html) to learn the difference between absolute and relative (incremental) encoders.
 
-|![Quadrature](../../images/main/quadrature.jpg)|
-|:---:|
-|*Visual graph*|
+{% include image.html file="main/frc_electronics/quadrature.jpg" caption="Quadrature" max-width="200" %}
 
 You might see the term _quadrature encoder_ tossed around a lot. All that means is that the encoder can tell you the speed and rotation of a shaft bidirectionally (both forwards and backwards). This is possible because they send output through two channels, A and B, which are out of phase by 90 degrees. The phase difference is what determines the directionality, and that's why the function to flip the direction of an encoder reading is called `setSensorPhase`. Also, if you use a breakout board with an encoder, you'll need to be careful about getting the second signal wire in the right pin.
 
@@ -31,17 +29,13 @@ Pulses per revolution (PPR) is a measure of the resolution or precision of an in
 
 For continuously turning systems, you can pair an encoder with a 360° potentiometer measuring the same output shaft then program the encoder to always be "zeroed" at start up. Team 971 has done this with their robots; a video of their process can be found [here](https://www.youtube.com/watch?v=Xs4IweRIG5g).
 
-|![srxmagencoder](../../images/main/srxmagencoder.jpg)|
-|:---:|
-|*SRX Mag Encoder*|
+{% include image.html file="main/frc_electronics/srxmagencoder.jpg" caption="SRX Mag Encoder" max-width="200" %}
 
 We recommend the use of the [SRX Mag Encoders](http://www.ctr-electronics.com/srx-magnetic-encoder.html). They can be directly wired to Talon SRX's, and are easily programmable using [CTRE's libraries](http://www.ctr-electronics.com/downloads/api/java/html/index.html).
 
 Read about potentiometers in this article [here](http://www.resistorguide.com/potentiometer/). Although we don't use potentiometers very often for our robots, they may prove more practical than encoders in certain circumstances. Here's a [Chief Delphi thread](https://www.chiefdelphi.com/forums/showthread.php?t=100332) on potentiometers vs. encoders, and why you'd want to use one over another.
 
-|![potentiometer](../../images/main/pot.jpg)|
-|:---:|
-|*Potentiometer. They're also known as "pots"*|
+{% include image.html file="main/frc_electronics/pot.jpg" caption="Potentiometer. They're also known as \"pots\"" max-width="200" %}
 
 ### 3. IMUs
 
@@ -49,9 +43,7 @@ Learn about the differences between accelerometers, gyroscopes, and IMU's in thi
 
 These sensors can be used to keep the robot's drivetrain orientation, prevent it from tipping over, and more.
 
-|![navx](/images/main/navx.jpg)|
-|:---:|
-|*navX*|
+{% include image.html file="main/frc_electronics/navx.jpg" caption="navX" max-width="200" %}
 
 We most commonly use the [navX-MXP by Kauai Labs](https://www.kauailabs.com/store/index.php?route=product/product&product_id=56). It plugs into the  RoboRio's MXP port, or alternatively, you can use their omnimount. The libraries provided by Kauai Labs make programming for the navX simple.
 
@@ -59,17 +51,13 @@ Other IMUs by FRC teams include the [Pigeon IMU](http://www.ctr-electronics.com/
 
 ### 4. Limit Switches
 
-|![limitswitch](/images/main/limitswitch.jpg)|
-|:---:|
-|*Limit switch*|
+{% include image.html file="main/frc_electronics/limitswitch.jpg" caption="Limit switch" max-width="200" %}
 
 Read [this article](http://frc-pdr.readthedocs.io/en/latest/motors/limitswitch.html) to learn what limit switches are, how to wire them, and how to program them. WPILib also has an [article](http://wpilib.screenstepslive.com/s/currentCS/m/java/l/599744-using-limit-switches-to-control-behavior) on programming limit switches. When using a limit switch, be sure to note whether it's normally open (NO) or normally closed (NC).
 
 Hall effect sensors can be used as a contactless limit switch. We recommend [this sensor](https://www.andymark.com/Electrical-p/am-3313.htm) intended for use on the DART actuator. If you'd like, you can learn about how hall effect sensors work [here](https://www.electronics-tutorials.ws/electromagnetism/hall-effect.html).
 
-|![halleffect](/images/main/halleffect.gif)|
-|:---:|
-|*Hall effect*|
+{% include image.html file="main/frc_electronics/halleffect.gif" caption="Hall Effect" max-width="200" %}
 
 ### 5. Other Not so Common (But Maybe Useful) Sensors
 

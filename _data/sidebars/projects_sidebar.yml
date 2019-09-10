@@ -7,27 +7,14 @@ entries:
   - title: Robots
     output: web, pdf
     folderitems:
+    - title: 2019 - IO
+      url: /projects/robots/io
+      output: web, pdf
 
     - title: 2018 - Rafiki
-      url: /projects_rafiki.html
+      url: /projects/robots/rafiki
       output: web, pdf
 
     - title: 2017 - Red Dwarf (Offseason)
-      url: /projects_red_dwarf.html
-      output: web, pdf
-
-  - title: Robot Software
-    output: web, pdf
-    folderitems:
-
-    - title: CardinalDash
-      url: /projects_dash.html
-      output: web, pdf
-
-  - title: Mobile/Web Apps
-    output: web, pdf
-    folderitems:
-
-    - title: CardinalScout 2018
-      url: /projects_cs_2018.html
+      url: /projects/robots/red_dwarf
       output: web, pdf
