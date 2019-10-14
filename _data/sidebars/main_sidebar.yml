@@ -44,10 +44,6 @@ entries:
       url: /main/robot_programming/command_based_programming
       output: web, pdf
 
-    - title: Test Driven Development
-      url: /main/robot_programming/test_driven_development
-      output: web, pdf
-
   - title: Electronics
     output: web, pdf
     folderitems:
@@ -58,6 +54,10 @@ entries:
 
     - title: Basic Theory
       url: /main/electronics/basic_theory
+      output: web, pdf
+
+    - title: How To / Troubleshooting
+      url: /main/electronics/guides_troubleshooting
       output: web, pdf
 
     - title: FRC Electronics
@@ -90,6 +90,10 @@ entries:
 
     - title: PID Control
       url: /main/control_systems/pid
+      output: web, pdf
+
+    - title: Modelling
+      url: /main/control_systems/modelling
       output: web, pdf
 
     - title: Computer Vision
