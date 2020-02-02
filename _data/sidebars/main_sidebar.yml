@@ -4,6 +4,18 @@ entries:
 - title: sidebar
   product: Content
   folders:
+  - title: How To
+    output: web, pdf
+    folderitems:
+
+    - title: Introduction
+      url: /main/how_to/intro
+      output: web, pdf
+
+    - title: Ribbon Cable
+      url: /main/how_to/ribbon_cable
+      output: web, pdf
+
   - title: General Programming
     output: web, pdf
     folderitems:
